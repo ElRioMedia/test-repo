@@ -1,4 +1,4 @@
-# make title With hash command
+# make title with hash command
 
 1 - this file was created on GiHub
 
