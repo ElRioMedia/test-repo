@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Mobile Responsive Viewport Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eliot Cartwright-Finch Personal Site</title>
+  <!-- My Link Order -->
+  <!-- The logic is: to load up what I want to prioritise, which is the Bootstrap framework first, then amend with my CSS rules, load extra icons from Font Awesome, then goto my Google Font API's for backup if all else fails when loading preferred fonts -->
+  <!-- Load Bootstrap, which will include font theme settings -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Load My CSS Rules -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Load Font Awesome Library for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+  <!-- Load Google Fonts, which will be used as a goto for best cross browser compatibility -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Ref: ||| Link from https://cdnjs.com/libraries/font-awesome -->
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <div class="header-wrapper">
+
+    <header id="header"></header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-light bg-light navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">El Rio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">El Rio</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <!-- About Page Link -->
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <!-- My Work (BS Dropdown Menu) -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle offcanvasNavbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">My Work</a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="web development projects.html">Web Development Projects</a></li>
+                  <li><a class="dropdown-item" href="client work.html">Client Work</a></li>
+                </ul>
+              </li>
+              <!-- Documentation (BS Dropdown Menu) -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle offcanvasNavbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Documentation</a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="html & css - responsive web design.html">HTML & CSS</a></li>
+                  <li><a class="dropdown-item" href="javascript - intro to javascript es6.html">JavaScript</a></li>
+                  <li><a class="dropdown-item" href="#">Git, GitHub, Version Control (coming soon)</a></li>
+                </ul>
+              </li>
+              <!-- Download CV Link -->
+              <li class="nav-item">
+                <a class="nav-link" href="/Users/KatNine/Documents/- Courses/Web Development/App Brewery/My Coding Sites/My Personal Site_V1/documents/Eliot Finch_Web Developer CV goto GDrive and upwork for final version.pdf">Download CV</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+  <!-- MAIN AREA -->
+  <!-- HERO BACKGROUND IMAGE -->
+  <main class="hero-image">
+    <!-- CENTRE CONTAINER TO ADD IN -->
+    <!-- Centre container (middle title area) using BS row, container and Flex Box -->
+    <div class="my-centre-title-container">
+      <div class="row">
+        <!-- Container 1 of 2 -->
+        <div class="my-inner-title-container col-lg-6">
+          <!-- align-items-center -->
+          <h1 class="my-title-text">Eliot Cartwright-Finch</h1>
+          <p class="my-title-text">Junior Web Developer Portfolio</p>
+          <a class="my-title-text btn btn-primary my-2 get-in-touch-btn" href="mailto:elcfinch@gmail.com?subject=Web Development Interview">Get In Touch</a>
+          <a class="my-title-text btn btn-primary my-2" href="/Users/KatNine/Documents/- Courses/Web Development/App Brewery/My Coding Sites/My Personal Site_V1/documents/Eliot Finch_Web Developer CV goto GDrive and upwork for final version.pdf"
+            download>Download CV</a>
+        </div>
+        <!-- Container 2 of 2 -->
+        <div class="my-inner-title-container col-lg-6">
+          <p class="my-title-text">Welcome to my web development portfolio website.</p>
+          <p class="my-title-text">Hit the top links to see some of my work and read a little bit more about everything I've learned over the years that brings all of this work together.</p>
+          <p class="my-title-text">If you are in need of some assistance from a web developer like myself, please contact me via the links in the header, footer and home page.</p>
+          <p class="my-title-text">Thanks for visiting, and Enjoy!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="my-light-container my-flex">
+    <div class="my-flex">
+      <div class="icons-div my-flex">
+        <a class="footer-icons fa-brands fa-linkedin" href="https://www.linkedin.com/in/eliot-finch-9b1a6661/" target="_blank"></a>
+        <a class="footer-icons fa-solid fa-envelope" href="mailto:elcfinch@gmail.com?subject=Web Development Interview"></a>
+      </div>
+      <div class="copyright-div my-flex">
+        <p class="paragraph-footer">© Copyright El Rio Media Ltd. 2022</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Adding my JS here for use with Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
